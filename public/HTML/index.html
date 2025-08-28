@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUN</title>
+    <link rel = "stylesheet" href = "../CSS/style.css">
+</head>
+<body>
+    <header class = "header">
+
+
+<div class = "logo">
+    <a href="index.html"><img class = "logo-img" src = "../image/logo.png" width = "84" height="24"></a>
+</div>
+
+<div class = "menu">
+    
+    <button class="btn-head" id="menu">Меню</button>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2><a href="#about">О нас</a></h2>
+            <h2><a href="#products">Товары</a></h2>
+            <h2><a href="#reviews">Отзывы</a></h2>
+        </div>
+    </div>
+</div>
+
+    <div class = "buy-search">
+        <div>
+            <a href="signin.html"><img src ="../image/Group%204.png" width = "13" height="23" class="login"></a>
+        </div>
+<a href="shopping-cart.html"><img class = "buy" src ="../image/Buy.png" width = "24" height="24"></a>
+        <a href="shopping-cart.html"><img class = "buy hidden" id="hide" src ="../image/Buy2.png" width = "24" height="24"></a>
+<div class="search-container">
+    <input type="text" id="searchInput" class="search-input" placeholder="Search...">
+    <img src="../image/search.png" alt="Search Icon" id="searchIcon" class="search-icon" width = "24" height="24">
+</div>
+    </div>
+
+    </header>
+
+<section class = "body" id ="body">
+    <div class = "main-body">
+       <h1>Продаём<br>Электро -<br> cамокаты</h1>
+       
+       <p>Каталог из 38 моделей самокатов. Каждый из них<br> 
+       доставим в день заказа, благодаря своей логистике<br>
+       технологиям и инновациям</p>
+       <div class = "btn">
+       <button class="btn-catalog"><span>Смотреть каталог</span></button>
+
+
+           <button class="btn-call"><span>Перезвоните нам</span></button>
+       </div>
+    </div>
+
+    <div class = "best-seller">
+       <img class = "scooter" src="../image/bgNinebot%201.png" width="390" height="510" alt="Ninebot">
+       <img class = "background" src = "../image/bg_1.png" width="176" height="176">
+        <div class = "best-seller-text">
+            <h2>Лидер продаж</h2>
+            <p> Ninebot<br>KickscooterMax<br>G30</p>
+        </div>
+    </div>
+
+<div class="red">
+    <img src="../image/red.png" width="500px" class="red">
+    <img src="../image/Ellipse%20red%202.png" class="ellipse-bigger">
+    <img src="../image/Vector%20red%202.png" class="red-rictangle-bigger" width="565px">
+</div>
+
+<div class="green">
+    <img src="../image/green.png" class="green">
+    <img src="../image/ellips%20green%201.png" class="green-ellipse-bigger">
+    <img src="../image/Vector%20green%202.png" class="green-rictangle-bigger" width="565px">
+</div>
+   </section>
+
+   <section class ="about">
+    <img src = "../image/Frame%203.png" class = "why-we" id="about" width="1046" height="">
+    
+   </section>
+
+   <section class="product">
+    <div class="product-head" id="products">
+        <h1>В продаже</h1>
+        <div class="arrow-container">
+            <button class="arrow-back" onclick="prevSlide()"><img src="../image/Vector1.png" alt=""></button>
+            <button class="arrow-next" onclick="nextSlide()"><img src="../image/Vector.png" alt=""></button>
+        </div>
+    </div>
+
+    <div class="product-main">
+        <div class="slide">
+            <div class="scooter-card">
+
+            </div>
+
+            <div class="scooter-card" id="scooter-card">
+
+            </div>
+        </div>
+        
+        <div class="slide">
+            <div class="scooter-card">
+                <div class="scooter-info">
+                    <h2>Xiaomi Mi Electric Scooter M365</h2>
+                    <p>Аккумулятор 7800 А·ч,
+                        максимальная скорость 25 км/ч,
+                        максимальная нагрузка 100 кг</p>
+                    <button class="aovo-btn">Купить за<br><span>15 000 ₽</span></button>
+                </div>
+                <img src="../image/imgMidway.png" alt="" class="scooter-product" width="200" height="300">
+                <img src="../image/Auto%20Layout%20Horizontal.png" class="new" width="120" height="150">
+            </div>
+
+            <div class="scooter-card">
+                <div class="scooter-info">
+                    <h2>Razor A5 Lux</h2>
+                    <p>Аккумулятор: отсутствует (механический самокат),
+                        максимальная скорость: -,
+                        максимальная нагрузка 100 кг</p>
+                    <button id="another-btn" class="aovo-btn">Купить за<br><span>13 000 ₽</span></button>
+                </div>
+                <img src="../image/imgMidway.png" alt="" class="scooter-product" width="200" height="300">
+                <img src="../image/Auto%20Layout%20Horizontal.png" class="new" width="120" height="150">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="reviews">
+    <div class="name-section-scooter">
+        <h1>Клиенты<br>говорят</h1>
+        <p>Модель самоката:</p>
+        <h2>KugoSun 08</h2>
+    </div>
+
+    <div class="review-main">
+    <div class="review-slide">
+<div class="review">
+<img src="../image/Rectangle.png" class="reviwer-photo" width="280" height="480">
+<p>Приятно прокатиться всей семьей по вечерней Москве. 
+    <b>Одного заряда хватает на 3 часа.</b> 
+    Хотелось бы, чтобы была возможность… </p>
+    
+    <div class="arrows">
+    <button class="arrow-back" onclick="prevSlide()"><img src="../image/Vector1.png" alt=""></button>
+    <button class="arrow-next" onclick="nextSlide()"><img src="../image/Vector.png" alt=""></button>
+    <span>Евгения<br> Белосизова</span>
+    </div>
+    </div>
+</div>
+
+    <div class="review-slide">
+       <div class="review">
+        <img src="../image/Rectangle.png" class="reviwer-photo" width="280" height="480">
+        <p>Приятно прокатиться всей семьей по вечерней Москве. 
+            <b>Одного заряда хватает на 3 часа.</b> 
+            Хотелось бы, чтобы была возможность… </p>
+
+              <div class="arrows">
+                <button class="arrow-back" onclick="prevSlide()"><img src="../image/Vector1.png" alt=""></button>
+                <button class="arrow-next" onclick="nextSlide()"><img src="../image/Vector.png" alt=""></button>
+                <span>Евгения<br> Белосизова</span>
+               </div>
+       </div>
+   </div>
+ </div>
+</section>
+
+
+<section class="footer">
+    <div class="first-column">
+       <img src="../image/logo.png" width="80" height="">
+       <p>© 2009-2022. RUN<br>
+          Все права защищены</p>
+    </div>
+    <div class="second-column">
+        <a href="#"><p>Сотрудничество</p>
+
+     <div class="second-column-middle">
+        <a href="#"><p>Новости</p>
+        <a href="#"><p>Партнерская программа</p>
+        <a href="#"><p>О производстве</p>
+        <a href="#"><p>Вакансии</p>
+     </div>
+
+     <div class= "second-column-down">
+        <a href="#"><p>Политика конфиденциальности</p>
+    </div>
+</div>
+
+<div class="third-column">
+    <a href="#"><p>Покупателям</p>
+
+    <div class="third-column-middle">
+        <a href="#"><p>Как выбрать</p>
+       <a href="#"><p>Оплата и доставка</p>
+       <a href="#"><p>Обратная связь</p>
+       <a href="#"><p>Возврат</p>
+    </div>
+
+    <div class= "third-column-down">
+        <a href="#"><p>Социальная ответственность</p>
+   </div>
+</div>
+
+<div class="four-column">
+    <p><b>hello@run.ru</b></p>
+    <a href="#"><img src="../image/tg.png" width="19">
+        <a href="#"><img src="../image/yt.png" width="19">
+            <a href="#"><img src="../image/smth.png" width="19">
+    <a href="#"><img src="../image/link.png" width="19">
+</div>
+</section>
+    <script src = "../js/script.js"></script>
+</body>
+</html>
